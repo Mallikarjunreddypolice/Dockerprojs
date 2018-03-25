@@ -1,0 +1,5 @@
+org\mallik\controller\MainController.class
+org\mallik\Application.class
+org\mallik\listners\Receiver.class
+org\mallik\repo\UsersRepository.class
+org\mallik\entity\Users.class
