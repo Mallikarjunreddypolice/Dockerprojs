@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form action="myform" method="post" onsubmit="return checkValidate()">
+<p>Please click on the Login button to Sign-in.</p>
+
+  User Name:
+  <br>
+  <input type="text" id ="fname" name="firstname" value="" required="required" min="6" >
+  <br>
+  Password:
+  <br>
+  <input type="password" id="password" name="lastname" value="">
+  <br>
+  <br>
+  <input type="submit" value="Login">    <input type="reset" value="Reset"> 
+  <br>
+  <br>
+  <a href="./addUser.jsp">New user</a>
+ </form>
+
+
+
+<script language="javascript" type="text/javascript">
+
+function checkValidate(){
+	
+	var username=document.getElementById("fname").value;
+	if(username.length <=6 ){
+		alert("please enter username more than 6")
+		return false;
+	}else{
+		return true;
+	}
+}
+
+</script>
+
+</body>
+</html>
